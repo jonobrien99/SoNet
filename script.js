@@ -199,7 +199,8 @@ pstBttn.addEventListener('click', () =>{
 			database.collection('userposts').add({
 				name: postName,
 				text: postText,
-				url: postImage
+				url: postImage,
+				likes: 0
 			})
 			alert("Posted!");
 
