@@ -770,7 +770,12 @@ grid-column: 2 / 3;
 	color: #444;
 	font-size: 1.6rem;
 }
-
+.toggle{ 
+  cursor: pointer;
+}
+.logout{ 
+  cursor:pointer;
+}
 /* end of feeds nav */
 
 /* feeds content */
