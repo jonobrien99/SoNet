@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="UTF-8" />
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    	<link
+      		rel="stylesheet"
+      		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+	    	integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+   		    crossorigin="anonymous"
+    	/>
+    	<link
+      		href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700&display=swap"
+      		rel="stylesheet"
+    	/>
+    	<link rel="stylesheet" href="style.css" />
+    	<link rel="shortcut icon" type="image/ico" href="images/logo.ico" />
+		<script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-firestore.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-auth.js"></script>
+		<title>SoNet</title>
+  	</head>
+  
+	<body>
+    	<!-- main page -->
+    	<section class="main-page">
+      		<!-- left -->
+      		<div class="left">
+        		<div class="left-content">
+          			<div>
+            			<i class="fas fa-search"></i>
+            			<h3 class="left-content-heading">Find your interests</h3>
+          			</div>
+          			<div>
+            			<i class="fas fa-user-friends"></i>
+            			<h3 class="left-content-heading">
+              				Explore what people are talking about
+            			</h3>
+          			</div>
+          			<div>
+            			<i class="fas fa-comment"></i>
+            			<h3 class="left-content-heading">Join them</h3>
+         			 </div>
+        		</div>
+     		</div>
+      		<!-- end of left -->
+			
+      		<!-- right -->
+      		<div class="right">
+        		<div class="middle-content">
+          			<i class="fas fa-globe" style="font-size: 6.5rem"></i>
+         			<h1>Explore what's hapenning in the world</h1>
+          			<h4 style="color: #7450A9">Join today</h4>
+         			<button type="button" class="log-in main-btn">Enter Here</button>
+        		</div>
+      		</div>
+      		<!-- end of right -->
+
+      		<!-- footer -->
+      		<footer class="main-page-footer">
+        		<p><a class="about-Btn">About</a></p>
+      		</footer>
+      		<!-- end of footer -->
+    	</section>
+    	<!-- end of main page -->
+
+		<!-- about page -->
+
+		<!-- end of about page -->
+
+    	<!-- login page -->
+    	<section class="login-page">
+      		<!-- login page nav -->
+      		<nav class="login-page-nav">
+        		<ul>
+           			<li>
+             			<a href="index.html">Home</a>
+            		</li>
+          			<li><a href="#">About</a></li>
+					<li/>
+          		</ul>
+      		</nav>
+      		<!-- end of login page nav -->
+
+      		<!-- login -->
+      		<div class="login">
+        		<div class="login-content">
+            		<h2><i class="fas fa-globe" style="color: black !important"></i> Log in to SoNet</h2>
+          			<form class="login-form">
+            			<input
+			  				id="login-email"
+              				type="text"
+              				placeholder="Email"
+              				class="login-user-info"
+							name="login-email"
+            			/>
+						<input
+							id="login-pass"
+							type="password"
+							placeholder="Password"
+							class="login-user-info"
+							name="login-password"
+						/>
+            			<div>
+              				<button type="button" class="login-form-btn">Log In</button>
+            			</div>
+          			</form>
+        		</div>
+        		<footer class="login-footer">
+          			<p>New to SoNet?<a class="to-sign-up-page"> Sign up now</a></p>
+        		</footer>
+      		</div>
+      		<!-- end of login -->
+
+      		<!-- login modal -->
+      		<div class="login-modal">            
+        		<i class="fas fa-times"></i>
+        		<p>
+          			Please ensure both feilds have been entered.
+        		</p>
+      		</div>
+      		<!-- end of login modal -->
+    	</section>
+    	<!-- end of login page -->
+    
+      <!-- sign up page -->
+    <section class="signup-page">
+      <!-- sign-in page nav  -->
+      <nav class="signup-page-nav">
+        <ul>  
+          <li class="brand"><a href="index.html"> Home </a></li>
+          <li><a href="#">Language: English</a></li>
+        </ul>
+      </nav>
+      <!-- end of sign in page nav --> 
+      <!-- sign-in -->
+ 
+      <div class="signup">
+        <div class="signup-content">
+            	         
+            <h2 style="font-weight:bold"> <i class="fas fa-globe" style="font-size: 3rem; color: black !important"></i> Sign Up to SoNet</h2>
+          <form class="signup-form">
+            <input
+			  	id="signUp-name"
+              	type="text"
+              	placeholder="Username"
+              	class="signUp-user-info"
+				name="signUp-name"
+            />
+							
+            <input
+			  	id="signUp-email"
+              	type="text"
+    			placeholder="Email"
+            	class="signUp-user-info"
+				name="signUp-email"
+            />            
+            <input
+				id="signUp-pass"
+              	type="password"
+            	placeholder="Password"
+              	class="signUp-user-info"
+				name="signUp-password"
+            />
+            <div>
+            <button type="button" class="signup-form-btn">Sign Up</button>
+            </div>
+          </form>
+        </div>
+        <footer class="signup-footer">
+        </footer>
+         
+     </div>
+    </section>
+
+     
+    	<!-- feeds page -->
+    	<section class="feeds-page" >
+      		<!-- feeds nav -->
+      		<nav class="feeds-nav dark-mode-1">
+        		<div class="icons">
+          			<a href="#" class="active"><i class="fas fa-home"></i></a>
+        		</div>
+        		<div class="search-bar">
+          			<i class="fas fa-search"></i>
+          			<input
+            			type="text"
+           				placeholder="Search SoNet"
+            			class="search-bar-input dark-mode-2 light-text border"
+          			/>
+        		</div>
+        		<div class="user">
+          			<div class="user-img-wrapper">
+            			<img src="images/profile.jpg" />
+          			</div>
+          			<a href="#" class="user-link light-text"  id="display-name"></a>
+          			<i class="fas fa-chevron-down"></i>
+        		</div>
+      		</nav>
+      		<!-- end of feeds nav -->
+
+      		<!-- feeds content -->
+      		<div class="feeds-content dark-mode-2">        		
+        				<div class="posts dark-mode-1">
+          					<div class="post">	
+              					<div class="light-text" id="userPost">  
+                          	
+            					</div>  
+								                  
+         	 				</div>
+        				</div>       			
+    		</div>
+			<!-- end of feeds content -->
+
+      		<button type="button" class="post-btn">
+        		<i class="fas fa-feather-alt"></i> Post
+      		</button>          
+
+      		<!-- post modal -->
+      		<div class="modal-wrapper">
+        		<div class="modal dark-mode-1">
+          			<div class="modal-header border">
+            			<i class="fas fa-times"></i>
+						<button class="posting-btn" type="button">Post</button>
+          			</div>
+		  			<form class="post-content-modal" id="post-data">
+          				<div class="modal-body">
+            				<input
+			  					id="post-text"
+              					type="text"
+              					placeholder="What's happening?"
+			  					name="text"
+              					class="modal-input dark-mode-2 light-text border"/>
+		  				</div>
+		  				<div class="modal-body">
+			  				<input
+			      				id="post-image"
+			  	  				type="text"
+			  	  				placeholder="Image URL (Optional)"
+				  				name="image"
+				  				class="modal-input-url dark-mode-2 light-text border"/>
+          				</div>
+		  			</form>
+          			<div class="modal-footer">
+            			<div class="modal-icons">
+              				<i class="far fa-image"></i>
+            				<i class="fas fa-camera"></i>
+            				<i class="far fa-chart-bar"></i>
+            			</div>
+          			</div>
+        		</div>
+      		</div>
+      		<!-- end of post modal -->
+
+      		<!-- sidebar -->
+      		<div class="sidebar-wrapper">
+        		<div class="sidebar dark-mode-1">
+          			<div class="sidebar-header border">
+            			<h2 class="light-text">Account info</h2>
+            			<i class="fas fa-times"></i>
+          			</div>
+          			<div class="sidebar-user">
+            			<div class="sidebar-user-img">
+              				<img src="images/profile.jpg" />
+            			</div>
+          			</div>
+          			<div class="sidebar-user-info light-text">
+            			<h4 id="sidebar-display-name"></h4>
+						<p id="sidebar-display-email" class="sidebar-user-info"></p>
+          			</div>
+          			<div class="sidebar-list-2"> 
+          				<div class="dark-mode">
+            				<li class="Dark1"><p>Dark Mode</p> </li>           
+            				<div class="toggle">
+              					<div class="circle"></div>
+            				</div>
+         			 	</div>
+          				<!-- end of dark mode -->
+          				<footer class="sidebar-footer">
+           					<li class="logout"><a>Log Out</a></li>
+          				</footer>
+        			</div>
+      			</div>
+			</div>
+      		<!-- end of sidebar -->
+    	</section>
+    	<!-- end of feeds page -->
+		<script src="firebaseKey.js"></script>
+    	<script src="script.js"></script>
+      <style src="style.css"></style> 
+  	</body>
+</html>
